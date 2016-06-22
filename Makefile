@@ -5,7 +5,7 @@ sequential:
 	${CC} 3sat.c -o 3sat_seq -lm -O3
 	
 run:
-	cat input/medium.in | time ./3sat
+	time ./3sat < input/medium.in
 	
 scalingtest:
 	sh ./scalingtest.sh

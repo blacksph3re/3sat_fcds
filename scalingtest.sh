@@ -5,5 +5,5 @@ do
 	echo "------------"
 	echo "Number of threads = $i"
 	export OMP_NUM_THREADS=$i
-	time (cat input/large_unsolvable.in | ./3sat)
+	time ./3sat < input/large_unsolvable.in
 done
